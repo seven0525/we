@@ -1,0 +1,365 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    /* font-family: 'Fira Sans','TsukuARdGothic-Regular',sans-serif; */
+    font-family: "Times New Roman", Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    background: #151515 url(./YM_DSC8681_TP_V.jpg) no-repeat fixed left bottom;
+    background-size: cover;
+    text-align: center;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    color: white;
+}
+
+.header {
+    height: 950px;
+}
+
+.site-title-sub {
+    margin: 0 0 30px;
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+    color: white;
+}
+
+.site-title-sub::before,
+.site-title-sub::after {
+    content: '';
+    display: inline-block;
+    width: 140px;
+    height: 2px;
+    margin: 140px;
+    height: 2px;
+    margin: 0 30px;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+
+
+.site-title {
+    margin: 50px 0 50px;
+    font-size: 8.6rem;
+}
+
+.site-discription {
+    margin-bottom: 50px;
+    color: #888;
+    font-size: 1.6rem;
+}
+
+.button {
+    display: inline-block;
+    width: 200px;
+    padding: 20px;
+    margin: 40px 50px;
+    border-radius: 6px;
+    background-color: #afa58d;
+    color:#fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+
+
+
+.button-showy {
+    background-color: #f1b400;
+}
+
+.button-box{
+    opacity:0.7;
+    margin: 90px 50px 5px 50px;
+    padding: 10px;
+    width:100px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+
+.vision {
+ background-color:rgb(255, 255, 255);
+    color:black;
+    padding: 80px 30px;
+}
+
+.heading {
+    position: relative;
+    display: inline-block;
+    font-size: 4rem;
+    padding-bottom: 15px;
+    margin: 30px 0 30px;
+    letter-spacing: 2px;
+
+    /*fadeIn*/
+    opacity : 0;
+    transform : translate(0, 50px);
+    transition : all 500ms;
+}
+
+ 
+
+.heading.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+
+
+.heading::before,
+.heading::after {
+    content:'';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+
+.heading::before {
+    bottom: 5px;
+}
+
+.text {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 30px 100px;
+    line-height: 60px;
+}
+
+.about-us {
+    background-color: #383634;
+    padding: 80px 0;
+    margin: 6%;
+}
+
+.about-icon{
+    width: 150px;
+    height: 150px;
+    margin:50px 0;
+    border: 4px solid;
+    border-radius: 50%;
+    color: #f1b400;
+    font-size: 8rem;
+    line-height: 142px;
+}
+
+.skill-title {
+    margin: 0 20px 40px;
+    font-size: 2rem;
+}
+
+.skill-text {
+    font-size: 1.2rem;
+    margin: 20px;
+    line-height: 2;
+}
+
+.portfolio {
+    background-color: #fff;
+    color:black;
+    overflow: scroll;
+}
+
+.portfolio-introduction {
+    font-size: 2rem;
+}
+
+.portfolio-fix {
+    position:sticky;
+    left: 0;
+}
+
+.portfolio-wrapper {
+    display: inline-block;
+    display: table;
+    margin-top: 60px;
+    table-layout: fixed;
+    min-width: 100%;
+    
+    }
+    
+    
+.portfolio-image {
+    display: block;
+    width:350px;
+    margin: 0 0 60%;
+    transition: 0.5s;
+}        
+
+.portfolio-image:hover {
+    transform: scale(1.2);
+}
+
+.portfolio-box {
+    position: relative;
+    display: table-cell;
+    overflow: hidden;
+}
+
+.portfolio-box:nth-of-type(odd) img {
+    transform-origin: top center;
+}
+
+.portfolio-box:nth-of-type(even) img {
+    transform-origin: bottom center;
+}
+
+.portfolio-box::after {
+    content: "";
+    position: absolute;
+    top:50%;
+    left : 0;
+    width: 100%;
+    height: 50%;
+    background:no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.3;
+    /* transform: scaleY(-1); */
+}
+
+.portfolio-description {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 50%;
+}
+
+.portfolio-description-inner {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.portfolio-text {
+    display: block;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    line-height: 2;
+    
+}
+
+.portfolio-text.button {
+    width: 60%;
+    margin-top: 20px;
+    padding: 3px;
+}
+
+
+.portfolio-box.mountain::after {
+    background-image: url('./PinEarth.jpg');
+}
+
+.portfolio-box.seed::after {
+    background-image: url('./personality.png');
+}
+
+.portfolio-box.porple-flower::after {
+    background-image: url('./KUMA1892018_TP_V.jpg');
+}
+
+.portfolio-box.red-flower::after {
+    background-image: url('./KUMA1892130_TP_V.jpg');
+}
+
+.portfolio-box:nth-child(odd) .portfolio-image {
+    margin: 60% 0 0;
+}
+
+.portfolio-box:nth-child(odd) .portfolio-description,
+.portfolio-box:nth-child(odd)::after {
+    top: 0;
+}
+
+.contact {
+    padding: 80px 0 150px;
+}
+
+
+
+
+
+.footer {
+    padding: 12px 0;
+    font-size: 1.3rem;
+}
+
+
+.back-to-top-icon {
+    font-size: 6rem;
+    text-align: right;
+    color: #f1b400;
+    margin: 60px;
+    position: fixed;
+    top: 80%;
+    right: 0;
+}
+
+
+@media (max-width: 1336px) {
+
+.body {
+    font-size: 1.3rem;
+}
+
+.site-title-sub::before,
+.site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    font-size: 1.7rem;
+}
+
+.heading {
+    font-size: 2.5rem;
+}
+
+.skill-us {
+    line-height: 1.8rem;
+}
+
+
+.contact {
+    padding-bottom: 80px;
+}
+
+.back-to-top-icon {
+    font-size: 3.5rem;
+    margin: 40px;
+}
+
+}
+
+@media (max-width: 1080px){
+    .portfolio-wrapper,
+.portfolio-box {
+    display: block;
+}
+
+.portfolio-image {
+    display: none;
+}
+
+.portfolio-description {
+    position: relative;
+}
+
+.portfolio-box::after {
+    top: 0;
+    height: 100%;
+    background-size: cover;
+    transform: none;
+}
+}
